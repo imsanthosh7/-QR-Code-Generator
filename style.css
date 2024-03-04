@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(255, 231, 0);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.title h1 {
+  position: relative;
+  color: rgb(128, 0, 128);
+  top: 170px;
+  font-size: 40px;
+  font-family: 'Chakra Petch', sans-serif;
+
+}
+
+.continer {
+  width: 300px;
+  background-color: rgb(255, 255, 240);
+  margin: auto;
+  align-items: center;
+  margin-top: 200px;
+  border-radius: 15px;
+  filter: drop-shadow(1px 1px 5px rgb(186, 182, 182));
+}
+
+.continer p {
+  padding-top: 25px;
+  padding-left: 22px;
+  font-size: 20px;
+}
+
+.continer input {
+  margin-top: 18px;
+  margin-left: 20px;
+  width: 250px;
+  height: 35px;
+  outline: none;
+  border: 2px solid rgb(128, 128, 128);
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.continer button {
+  width: 230px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 33px;
+  background-color: rgb(30, 144, 255);
+  color: #ffffff;
+  border: none;
+  font-size: medium;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgb(211, 211, 211);
+  cursor: pointer;
+}
+
+#imgbox {
+  width: 200px;
+  padding-right: 120px;
+  border-radius: 5px;
+  max-width: 0;
+  transition: max-height 1s;
+}
+
+#imgbox img {
+  width: 120px;
+  padding: 5px;
+
+}
+
+#imgbox.show-img {
+  max-height: 300px;
+  margin: 15px auto;
+  border: 2px solid #000000;
+}
+
+.error {
+  animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+  0% {
+    transform: translatex(0);
+
+  }
+
+  25% {
+    transform: translatex(12px);
+
+  }
+
+  50% {
+    transform: translatex(0);
+
+  }
+
+  75% {
+    transform: translatex(2px);
+
+  }
+
+  100% {
+    transform: translatex(0);
+
+  }
+
+}
